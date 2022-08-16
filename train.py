@@ -33,12 +33,12 @@ if __name__ == "__main__":
     torch.cuda.set_device(local_rank)
     print('distributed')
 
-    from networks import nat
+    from networks import mn_unet
 
     print('before init_seeds')
     init_seeds(args.seed + local_rank)
     print('before net')
-    net = nat.NAT(num_classes=args.num_classes).cuda(local_rank)
+    net = mn_unet.MN_Unet(num_classes=args.num_classes).cuda(local_rank)
 
     print('net')
     net = nn.SyncBatchNorm.convert_sync_batchnorm(net).cuda(local_rank)

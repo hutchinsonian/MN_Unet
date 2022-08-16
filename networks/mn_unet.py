@@ -552,7 +552,7 @@ class NATBlock(nn.Module):
 
 
 # @BACKBONES.register_module()
-class NAT(nn.Module):
+class MN_Unet(nn.Module):
     def __init__(self,
                  num_classes,
                  embed_dim=32,                   # 第一个NAT Block输出的channel
