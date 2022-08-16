@@ -1,4 +1,4 @@
-This repo hosts the code for the following networks: *MN_Unet*  
+This repo hosts the code for the following networks: **MN_Unet**  
 It also has dataloaders organized for generic 2D image segmentation and 3D volumetric segmentation for BraTS, LiTS,19-COVID dataset.
 
 # Introduction
